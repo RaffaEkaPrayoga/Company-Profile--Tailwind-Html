@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.underline-link {
+    @apply w-0 transition-all duration-300 group-hover:border-orange-300 group-hover:w-full;
+}
+
+.nav-menu {
+    @apply fixed right-0 top-16 bg-sky-900 text-slate-100 shadow-lg rounded-lg;
+}
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] my-2 bg-slate-100 block;
+}
+
+.hamburger-active > span:nth-child(1) { 
+    @apply origin-top-left rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply origin-bottom-left -rotate-45;
+}
+
+.staro {
+    @apply mt-2;
+}
+
+.swiper-pagination-bullet-active {
+    @apply bg-orange-500;
+}
+
+.brands {
+    @apply hover:text-orange-500 transition-all duration-300;
+}
+
+ .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay dengan opacity */
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+.hero {
+    position: relative;
+    z-index: 1;
+}
+
+.marquee {
+    display: flex;
+    animation: marquee 20s linear infinite;
+}
+    
+@keyframes marquee {
+    0% {
+    transform: translateX(0);
+    }
+    
+    100% {
+    transform: translateX(-100%);
+    }
+}
+

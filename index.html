@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bd2b93a447.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="font-poppins">
+    <!-- Navbar Start -->
+    <header class="flex flex-wrap justify-between p-4 bg-sky-900 text-slate-100 fixed w-full z-50 lg:justify-between">
+        <div class="flex items-center gap-2">
+            <img src="assets/img/Laptop.jpg" width="10%" alt="Company Logo" class="w-12 rounded-md">
+            <h1 class="font-bold text-xl">RanzTech</h1>
+        </div>
+    
+        <nav class="hidden lg:block">
+            <ul class="flex gap-5 pt-1 items-center">
+                <li class="group">
+                    <a href="#hero" class="transition-all duration-300 hover:text-orange-300">Home</a>
+                    <hr class="underline-link">
+                </li>
+                <li class="group">
+                    <a href="#about" class="transition-all duration-300 hover:text-orange-300">About Us</a>
+                    <hr class="underline-link">
+                </li>
+                <li class="group">
+                    <a href="#services" class="transition-all duration-300 hover:text-orange-300">Services</a>
+                    <hr class="underline-link">
+                </li>
+                <li class="group">
+                    <a href="#technologies" class="transition-all duration-300 hover:text-orange-300">Technologies</a>
+                    <hr class="underline-link">
+                </li>
+                <li class="group">
+                    <a href="#our-process" class="transition-all duration-300 hover:text-orange-300">Our Proccess</a>
+                    <hr class="underline-link">
+                </li>
+                <li class="group">
+                    <a href="#portfolio" class="transition-all duration-300 hover:text-orange-300">Portfolio</a>
+                    <hr class="underline-link">
+                </li>
+                <li class="group">
+                    <a href="#team" class="transition-all duration-300 hover:text-orange-300">Team</a>
+                    <hr class="underline-link">
+                </li>
+                <li class="group">
+                    <a href="#testimonials" class="transition-all duration-300 hover:text-orange-300">Testimonials</a>
+                    <hr class="underline-link">
+                </li>
+                <li class="group">
+                    <a href="#patners" class="transition-all duration-300 hover:text-orange-300">Partners</a>
+                    <hr class="underline-link">
+                </li>
+                <li class="group">
+                    <a href="#contact" class="transition-all duration-300 hover:text-orange-300">Contact</a>
+                    <hr class="underline-link">
+                </li>
+            </ul>
+        </nav>
+    
+        <button id="hamburger" type="button" class="lg:hidden">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    
+        <div id="nav-menu"
+            class="nav-menu hidden lg:hidden absolute right-0 top-16 mt-2 bg-sky-900 text-slate-100 px-4 py-4 rounded-lg">
+            <ul class="flex flex-col gap-4">
+                <li>
+                    <a href="#hero" class="transition-all duration-300 hover:text-orange-300">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="transition-all duration-300 hover:text-orange-300">About Us</a>
+                </li>
+                <li>
+                    <a href="#services" class="transition-all duration-300 hover:text-orange-300">Services</a>
+                </li>
+                <li>
+                    <a href="#technologies" class="transition-all duration-300 hover:text-orange-300">Technologies</a>
+                </li>
+                <li>
+                    <a href="#our-process" class="transition-all duration-300 hover:text-orange-300">Our Process</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="transition-all duration-300 hover:text-orange-300">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#team" class="transition-all duration-300 hover:text-orange-300">Team</a>
+                </li>
+                <li>
+                    <a href="#testimonials" class="transition-all duration-300 hover:text-orange-300">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#patners" class="transition-all duration-300 hover:text-orange-300">Partners</a>
+                </li>
+                <li>
+                    <a href="#contact" class="transition-all duration-300 hover:text-orange-300">Contact</a>
+                </li>
+                <li>
+                    <a href="https://api.whatsapp.com/send/?phone=628127723443&text&type=phone_number&app_absent=0"
+                        class="bg-orange-600 px-6 py-2 rounded-lg transition-all duration-300 hover:bg-orange-700 flex items-center"><i
+                            class="fa-brands fa-whatsapp"></i> Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section text-white min-h-screen flex items-center bg-cover bg-center relative"
+        style="background-image: url('https://media.istockphoto.com/id/1363104923/id/foto/kantor-modern-yang-beragam-pengusaha-memimpin-pertemuan-bisnis-dengan-manajer-pembicaraan.jpg?s=612x612&w=0&k=20&c=COXt8Z9lNeseQjDaK7tFbjpYPbb3R4u87Ij6_WuFHMc=');">
+        <div class="hero-overlay bg-opacity-80 absolute inset-0"></div>
+        <div class="container mx-auto px-6 py-16 mt-16 relative z-10">
+            <div class="flex flex-col md:flex-row items-center text-center md:text-left">
+                <!-- Right side: Image -->
+                <div class="order-2 md:order-1 md:w-1/2 flex justify-center">
+                    <img src="assets/img/gedung.jpg" width="80%" alt="Hero Image"
+                        class="rounded-lg border-4 border-sky-800 shadow-lg max-w-full h-auto">
+                </div>
+                <!-- Left side: Text -->
+                <div class="order-1 md:order-2 md:w-1/2 md:pr-10">
+                    <h1 class="text-4xl font-bold md:text-5xl">Selamat Datang di RanzTech</h1>
+                    <p class="mt-4 text-lg md:text-xl">
+                        Mengubah ide menjadi solusi digital. Mari kita membangun sesuatu yang luar biasa bersama!
+                    </p>
+                    <button
+                        class="mt-6 bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Hero End -->
+
+    <!-- About Start -->
+    <section id="about" class="bg-gray-100 text-gray-800 py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Tentang Kami</h2>
+                <p class="text-lg">
+                    Kami adalah perusahaan software house yang berdedikasi untuk memberikan solusi digital terbaik bagi
+                    bisnis Anda.
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- Left side: Image -->
+                <div class="md:w-1/2">
+                    <img src="assets/img/perusahaan.jpg" alt="Tentang Kami" class="rounded-lg shadow-lg">
+                </div>
+                <!-- Right side: Text -->
+                <div class="md:w-1/2 md:pl-10 mt-8 md:mt-0">
+                    <h3 class="text-2xl font-semibold mb-4">Visi Kami</h3>
+                    <p class="mb-6">
+                        Menjadi mitra terpercaya dalam pengembangan teknologi yang inovatif dan berkelanjutan untuk
+                        mendukung pertumbuhan bisnis Anda.
+                    </p>
+                    <h3 class="text-2xl font-semibold mb-4">Misi Kami</h3>
+                    <p class="mb-6">
+                        Kami berkomitmen untuk memberikan solusi teknologi yang efektif, efisien, dan disesuaikan dengan
+                        kebutuhan klien kami, dengan fokus pada kualitas, integritas, dan inovasi.
+                    </p>
+                    <h3 class="text-2xl font-semibold mb-4">Sejarah Singkat</h3>
+                    <p>
+                        Didirikan pada tahun 2023, kami telah berkembang menjadi salah satu penyedia solusi digital terdepan
+                        di Indonesia, dengan tim yang berpengalaman dalam berbagai bidang teknologi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Our Services Start -->
+    <section id="services" class="bg-white text-gray-800 py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Layanan Kami</h2>
+                <p class="text-lg">
+                    Kami menawarkan berbagai layanan untuk memenuhi kebutuhan teknologi bisnis Anda.
+                </p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Service 1 -->
+                <div class="max-w-xs w-full p-6 bg-gray-100 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300">
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <svg class="w-16 h-16 text-orange-500 mx-auto" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Pengembangan Web</h3>
+                        <p class="text-gray-600">
+                            Kami membangun website yang responsif, modern, dan sesuai kebutuhan bisnis Anda.
+                        </p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="max-w-xs w-full p-6 bg-gray-100 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300">
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <svg class="w-16 h-16 text-orange-500 mx-auto" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Aplikasi Mobile</h3>
+                        <p class="text-gray-600">
+                            Solusi aplikasi mobile yang inovatif untuk meningkatkan keterlibatan pengguna Anda.
+                        </p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="max-w-xs w-full p-6 bg-gray-100 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300">
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <svg class="w-16 h-16 text-orange-500 mx-auto" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v8m-4-4h8">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Konsultasi IT</h3>
+                        <p class="text-gray-600">
+                            Tim kami siap memberikan saran teknologi terbaik untuk kebutuhan bisnis Anda.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Services End -->
+
+    <!-- Technologies Start -->
+    <section id="technologies" class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Teknologi yang Kami Kuasai</h2>
+                <p class="text-lg">
+                    Kami menggunakan teknologi terbaru dan terbaik untuk membangun solusi yang andal dan berkinerja tinggi.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+                <!-- Technology 1 -->
+                <div class="flex flex-col items-center">
+                    <img src="https://img.icons8.com/color/96/000000/javascript.png" alt="JavaScript"
+                        class="w-20 h-20 mb-4">
+                    <h3 class="text-xl font-semibold">JavaScript</h3>
+                </div>
+                <!-- Technology 2 -->
+                <div class="flex flex-col items-center">
+                    <img src="https://img.icons8.com/ultraviolet/96/000000/react.png" alt="React" class="w-20 h-20 mb-4">
+                    <h3 class="text-xl font-semibold">React</h3>
+                </div>
+                <!-- Technology 3 -->
+                <div class="flex flex-col items-center">
+                    <img src="https://img.icons8.com/color/96/000000/nodejs.png" alt="Node.js" class="w-20 h-20 mb-4">
+                    <h3 class="text-xl font-semibold">Node.js</h3>
+                </div>
+                <!-- Technology 4 -->
+                <div class="flex flex-col items-center">
+                    <img src="https://img.icons8.com/color/96/000000/python.png" alt="Python" class="w-20 h-20 mb-4">
+                    <h3 class="text-xl font-semibold">Python</h3>
+                </div>
+                <!-- Technology 5 -->
+                <div class="flex flex-col items-center">
+                    <img src="https://img.icons8.com/color/96/000000/docker.png" alt="Docker" class="w-20 h-20 mb-4">
+                    <h3 class="text-xl font-semibold">Docker</h3>
+                </div>
+                <!-- Technology 6 -->
+                <div class="flex flex-col items-center">
+                    <img src="https://img.icons8.com/color/96/000000/git.png" alt="Git" class="w-20 h-20 mb-4">
+                    <h3 class="text-xl font-semibold">Git</h3>
+                </div>
+                <!-- Technology 7 -->
+                <div class="flex flex-col items-center">
+                    <img src="https://img.icons8.com/color/96/000000/mysql.png" alt="MySQL" class="w-20 h-20 mb-4">
+                    <h3 class="text-xl font-semibold">MySQL</h3>
+                </div>
+                <!-- Technology 8 -->
+                <div class="flex flex-col items-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2xQcwKitRgXfqdi34DYlocPSEXD2G2zZipg&s" alt="AWS" class="w-20 h-15 mt-8 mb-4">
+                    <h3 class="text-xl font-semibold">AWS</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Technologies End -->
+
+    <!-- Our Process Start -->
+    <section id="our-process" class="bg-white text-gray-900 py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Proses Kerja Kami</h2>
+                <p class="text-lg">Kami mengikuti proses yang terstruktur untuk memastikan setiap proyek selesai dengan
+                    standar tertinggi.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1: Konsultasi -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Konsultasi</h3>
+                    <p class="text-gray-700">Kami memulai dengan memahami kebutuhan Anda secara mendalam untuk merancang
+                        solusi yang tepat.</p>
+                </div>
+                <!-- Step 2: Pengembangan -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Pengembangan</h3>
+                    <p class="text-gray-700">Tim kami akan mengembangkan produk dengan kualitas terbaik menggunakan
+                        teknologi terbaru.</p>
+                </div>
+                <!-- Step 3: Peluncuran -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Peluncuran</h3>
+                    <p class="text-gray-700">Kami membantu Anda dalam peluncuran produk, memastikan semua berjalan lancar
+                        hingga produk siap digunakan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Process End -->
+
+    <!-- Case Studies/Portfolio Start -->
+    <section id="portfolio" class="bg-gray-100 text-gray-900 py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Portofolio Kami</h2>
+                <p class="text-lg">Lihat proyek-proyek terbaru kami yang telah membantu klien mencapai kesuksesan.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="assets/img/portofolio/web.jpg" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Proyek Aplikasi Web</h3>
+                        <p class="text-gray-700">Pengembangan aplikasi web e-commerce yang responsif dan mudah digunakan
+                            untuk meningkatkan penjualan online.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="assets/img/portofolio/konten.jpg" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Sistem Manajemen Konten</h3>
+                        <p class="text-gray-700">Pembuatan sistem manajemen konten yang fleksibel dan skalabel untuk
+                            perusahaan media besar.</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="assets/img/portofolio/mobile.jpg" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Aplikasi Mobile</h3>
+                        <p class="text-gray-700">Desain dan pengembangan aplikasi mobile untuk meningkatkan keterlibatan
+                            pengguna dan pengalaman pelanggan.</p>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="assets/img/portofolio/elearning.jpg" alt="Project 4" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Platform E-Learning</h3>
+                        <p class="text-gray-700">Pengembangan platform e-learning interaktif yang mendukung pembelajaran
+                            jarak jauh dengan fitur-fitur canggih.</p>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="assets/img/portofolio/iot.jpg" alt="Project 5" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Sistem IoT</h3>
+                        <p class="text-gray-700">Implementasi sistem IoT untuk otomatisasi rumah pintar dengan kontrol
+                            real-time melalui aplikasi mobile.</p>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="assets/img/portofolio/bisnis.jpg" alt="Project 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Aplikasi Bisnis</h3>
+                        <p class="text-gray-700">Pengembangan aplikasi bisnis yang membantu dalam manajemen operasional dan
+                            analisis data untuk meningkatkan produktivitas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Case Studies/Portfolio End -->
+
+    <!-- Team Start -->
+    <section id="team" class="bg-gray-100 text-gray-900 py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Tim Kami</h2>
+                <p class="text-lg">Kenali tim ahli kami yang berdedikasi dalam memberikan solusi terbaik untuk Anda.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center">
+                    <img src="assets/img/team/karyawan1.jpg" alt="Team Member 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">John Doe</h3>
+                        <p class="text-gray-700 mb-4">CEO & Founder</p>
+                        <p>John memiliki pengalaman lebih dari 10 tahun dalam industri teknologi, memimpin tim untuk
+                            menciptakan solusi inovatif dan sukses.</p>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center">
+                    <img src="assets/img/team/karyawan2.jpg" alt="Team Member 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Jane Smith</h3>
+                        <p class="text-gray-700 mb-4">CTO</p>
+                        <p>Jane adalah ahli teknologi dengan latar belakang mendalam dalam pengembangan perangkat lunak dan
+                            arsitektur sistem.</p>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center">
+                    <img src="assets/img/team/karyawan3.jpg" alt="Team Member 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Emily Johnson</h3>
+                        <p class="text-gray-700 mb-4">Lead Developer</p>
+                        <p>Emily adalah pengembang senior dengan keahlian dalam berbagai bahasa pemrograman dan teknologi
+                            web.</p>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center">
+                    <img src="assets/img/team/karyawan4.jpg" alt="Team Member 4" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Michael Brown</h3>
+                        <p class="text-gray-700 mb-4">UX/UI Designer</p>
+                        <p>Michael adalah desainer UX/UI yang berfokus pada menciptakan pengalaman pengguna yang intuitif
+                            dan estetis.</p>
+                    </div>
+                </div>
+                <!-- Team Member 5 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center">
+                    <img src="assets/img/team/karyawan5.jpg" alt="Team Member 5" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Sarah Davis</h3>
+                        <p class="text-gray-700 mb-4">Project Manager</p>
+                        <p>Sarah berpengalaman dalam manajemen proyek, memastikan proyek berjalan sesuai jadwal dan
+                            anggaran.</p>
+                    </div>
+                </div>
+                <!-- Team Member 6 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center">
+                    <img src="assets/img/team/karyawan6.jpg" alt="Team Member 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">David Wilson</h3>
+                        <p class="text-gray-700 mb-4">Marketing Specialist</p>
+                        <p>David memiliki keahlian dalam strategi pemasaran digital, membantu meningkatkan visibilitas dan
+                            pertumbuhan perusahaan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team End -->
+
+    <!-- Testimonials Start -->
+    <section id="testimonials" class="bg-gray-100 text-gray-900 py-16 px-20 min-h-screen flex items-center relative overflow-hidden ">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h4 class="font-semibold text-lg text-orange-600 mb-2">Testimoni</h4>
+                <h2 class="text-3xl font-bold mb-4">Apa Kata Klien Kami</h2>
+                <p class="text-md font-medium text-gray-600">Berikut adalah beberapa testimoni dari klien kami yang puas
+                    dengan layanan yang kami berikan.</p>
+            </div>
+            <div class="swiper-container testimonial-swiper py-6">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div
+                        class="swiper-slide bg-white rounded-lg overflow-hidden shadow-lg mx-2 md:mx-4 lg:mx-6 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+                        <div class="overflow-hidden rounded-full shadow-lg w-20 h-20 mx-auto mt-4">
+                            <img class="w-full h-full object-cover" src="assets/img/user.png" alt="Budi Hartono - Testimoni"
+                                loading="lazy" />
+                        </div>
+                        <div class="px-3 py-2 text-center">
+                            <h4 class="font-bold text-sm md:text-base mb-1">Budi Hartono</h4>
+                            <p class="text-gray-600 text-xs md:text-sm">CEO, Company X</p>
+                            <p class="text-gray-700 text-xs md:text-sm italic">"Tim Anda sangat profesional dan memberikan
+                                solusi yang tepat waktu dan berkualitas. Kami sangat puas dengan hasil kerja mereka."</p>
+                            <div class="flex justify-center mt-2">
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-gray-300 text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Testimonial 2 -->
+                    <div
+                        class="swiper-slide bg-white rounded-lg overflow-hidden shadow-lg mx-2 md:mx-4 lg:mx-6 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+                        <div class="overflow-hidden rounded-full shadow-lg w-20 h-20 mx-auto mt-4">
+                            <img class="w-full h-full object-cover" src="assets/img/user.png"
+                                alt="Joko Putra Wirawan - Testimoni" loading="lazy" />
+                        </div>
+                        <div class="px-3 py-2 text-center">
+                            <h4 class="font-bold text-sm md:text-base mb-1">Joko Putra Wirawan</h4>
+                            <p class="text-gray-600 text-xs md:text-sm">Founder, Startup Y</p>
+                            <p class="text-gray-700 text-xs md:text-sm italic">"Kami sangat terkesan dengan keahlian dan
+                                dedikasi tim Anda. Proyek kami berjalan lancar dan hasilnya luar biasa."</p>
+                            <div class="flex justify-center mt-2">
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Testimonial 3 -->
+                    <div
+                        class="swiper-slide bg-white rounded-lg overflow-hidden shadow-lg mx-2 md:mx-4 lg:mx-6 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+                        <div class="overflow-hidden rounded-full shadow-lg w-20 h-20 mx-auto mt-4">
+                            <img class="w-full h-full object-cover" src="assets/img/user.png"
+                                alt="Muhammad Anwar - Testimoni" loading="lazy" />
+                        </div>
+                        <div class="px-3 py-2 text-center">
+                            <h4 class="font-bold text-sm md:text-base mb-1">Muhammad Anwar</h4>
+                            <p class="text-gray-600 text-xs md:text-sm">Marketing Director, Company Z</p>
+                            <p class="text-gray-700 text-xs md:text-sm italic">"Layanan yang kami terima melebihi harapan
+                                kami. Tim Anda sangat berdedikasi dan hasil akhir sangat memuaskan."</p>
+                            <div class="flex justify-center mt-2">
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-gray-300 text-xs"></i>
+                                <i class="fa fa-star text-gray-300 text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Testimonial 4 -->
+                    <div
+                        class="swiper-slide bg-white rounded-lg overflow-hidden shadow-lg mx-2 md:mx-4 lg:mx-6 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+                        <div class="overflow-hidden rounded-full shadow-lg w-20 h-20 mx-auto mt-4">
+                            <img class="w-full h-full object-cover" src="assets/img/user.png"
+                                alt="Putri Indah Sari - Testimoni" loading="lazy" />
+                        </div>
+                        <div class="px-3 py-2 text-center">
+                            <h4 class="font-bold text-sm md:text-base mb-1">Putri Indah Sari</h4>
+                            <p class="text-gray-600 text-xs md:text-sm">Product Manager, Company A</p>
+                            <p class="text-gray-700 text-xs md:text-sm italic">"Tim yang sangat berpengalaman dan
+                                terpercaya. Kami sangat puas dengan hasil kerja dan layanan pelanggan yang diberikan."</p>
+                            <div class="flex justify-center mt-2">
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-gray-300 text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Testimonial 5 -->
+                    <div
+                        class="swiper-slide bg-white rounded-lg overflow-hidden shadow-lg mx-2 md:mx-4 lg:mx-6 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+                        <div class="overflow-hidden rounded-full shadow-lg w-20 h-20 mx-auto mt-4">
+                            <img class="w-full h-full object-cover" src="assets/img/user.png"
+                                alt="Raffa S.Kom, M.Kom - Testimoni" loading="lazy" />
+                        </div>
+                        <div class="px-3 py-2 text-center">
+                            <h4 class="font-bold text-sm md:text-base mb-1">Raffa S.Kom, M.Kom</h4>
+                            <p class="text-gray-600 text-xs md:text-sm">CEO, Company C</p>
+                            <p class="text-gray-700 text-xs md:text-sm italic">"Tim yang sangat berpengalaman dan
+                                terpercaya. Kami sangat puas dengan hasil kerja dan layanan pelanggan yang diberikan."</p>
+                            <div class="flex justify-center mt-2">
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                                <i class="fa fa-star text-yellow-500 text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <br>
+                <div class="swiper-pagination"></div>
+    
+                <!-- Navigation Buttons -->
+                <div
+                    class="swiper-button-prev  text-orange-500 transition-all duration-300 hover:text-orange-700 lg:block">
+                </div>
+                <div
+                    class="swiper-button-next text-orange-500 transition-all duration-300 hover:text-orange-700 lg:block">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials End -->
+
+    <!-- Partners/Clients Start -->
+    <section id="patners" class="bg-gray-100 py-16 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Mitra & Klien Kami</h2>
+                <p class="text-lg">Kami bangga bekerja sama dengan berbagai mitra dan klien terkemuka.</p>
+            </div>
+            <div class="relative flex items-center justify-center">
+                <div class="marquee flex gap-8 whitespace-nowrap">
+                    <!-- Partner/Client Logos -->
+                    <img src="assets/img/mitra/asus.png" alt="Partner 1" class="w-32 h-auto object-contain">
+                    <img src="assets/img/mitra/lenovo.png" alt="Partner 2" class="w-32 h-auto object-contain">
+                    <img src="assets/img/mitra/microsoft.png" alt="Partner 3" class="w-32 h-auto object-contain">
+                    <img src="assets/img/mitra/nvidia.png" alt="Partner 4" class="w-32 h-auto object-contain">
+                    <img src="assets/img/mitra/samsung.png" alt="Partner 5" class="w-32 h-auto object-contain">
+                    <img src="assets/img/mitra/sdm.png" alt="Partner 6" class="w-32 h-auto object-contain">
+                    <img src="assets/img/mitra/smkn2.png" alt="Partner 7" class="w-32 h-auto object-contain">
+                    <img src="assets/img/mitra/startbuck.png" alt="Partner 8" class="w-32 h-auto object-contain">
+                    <!-- Duplicate the logos to create a seamless loop -->
+                    <img src="assets/img/mitra/asus.png" alt="Partner 1" class="w-32 h-auto object-contain">
+                    <img src="assets/img/mitra/lenovo.png" alt="Partner 2" class="w-32 h-auto object-contain">
+                    <img src="assets/img/mitra/microsoft.png" alt="Partner 3" class="w-32 h-auto object-contain">
+                    <img src="assets/img/mitra/nvidia.png" alt="Partner 4" class="w-32 h-auto object-contain">
+                    <img src="assets/img/mitra/samsung.png" alt="Partner 5" class="w-32 h-auto object-contain">
+                    <img src="assets/img/mitra/sdm.png" alt="Partner 6" class="w-32 h-auto object-contain">
+                    <img src="assets/img/mitra/smkn2.png" alt="Partner 7" class="w-32 h-auto object-contain">
+                    <img src="assets/img/mitra/startbuck.png" alt="Partner 8" class="w-32 h-auto object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Partners/Clients End -->
+
+    <!-- Contact Us Start -->
+    <section id="contact" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Kontak Kami</h2>
+                <p class="text-lg">Kami siap membantu Anda. Silakan hubungi kami melalui formulir di bawah atau gunakan
+                    informasi kontak yang tercantum.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Contact Form -->
+                <div class="w-full md:w-2/3 lg:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-center">Formulir Kontak</h3>
+                    <form action="#" method="POST" class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700">Nama</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full mt-1 p-2 border border-green-300 rounded-md" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full mt-1 p-2 border border-green-300 rounded-md" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700">Pesan</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full mt-1 p-2 border border-green-300 rounded-md" required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-all duration-150"><span
+                                class="fa-brands fa-whatsapp"></span> Kirim Pesan di Whatsapp</button>
+                    </form>
+                </div>
+                <!-- Contact Information -->
+                <div class="w-full md:w-2/3 lg:w-1/3">
+                    <h3 class="text-2xl font-semibold mb-4 text-center">Informasi Kontak</h3>
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold">Alamat:</h4>
+                        <p>Jl. Contoh No.123, Kota, Negara</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold">Telepon:</h4>
+                        <p>(+62) 123-456-789</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold">Email:</h4>
+                        <p>info@perusahaan.com</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Map -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-semibold mb-4 text-center">Peta Lokasi</h3>
+                <div class="relative w-full h-96 max-w-4xl mx-auto">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.656491760856!2d101.43532157424072!3d0.5160480636899897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ada587458ae7%3A0x8fbcc32e7aa3065f!2sPT%20Solusi%20Data%20Madani!5e0!3m2!1sid!2sid!4v1725432107662!5m2!1sid!2sid"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        class="absolute inset-0 w-full h-full">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us End -->
+
+    <!-- Footer Start -->
+    <footer class="footer bg-slate-900 text-white py-6 md:py-10">
+        <div class="container mx-auto px-4 flex flex-col items-center">
+            <!-- Navigation Links -->
+            <nav class="mb-6 flex flex-wrap justify-center gap-4 text-center">
+                <a href="#home" class="transition-all duration-300 hover:text-orange-300">Home</a>
+                <a href="#about" class="transition-all duration-300 hover:text-orange-300">About us</a>
+                <a href="#services" class="transition-all duration-300 hover:text-orange-300">Services</a>
+                <a href="#technologies" class="transition-all duration-300 hover:text-orange-300">Technologies</a>
+                <a href="#our-process" class="transition-all duration-300 hover:text-orange-300">Our Process</a>
+                <a href="#portfolio" class="transition-all duration-300 hover:text-orange-300">Portfolio</a>
+                <a href="#team" class="transition-all duration-300 hover:text-orange-300">Team</a>
+                <a href="#testimonials" class="transition-all duration-300 hover:text-orange-300">Testimonials</a>
+                <a href="#partners" class="transition-all duration-300 hover:text-orange-300">Partners</a>
+                <a href="#contact" class="transition-all duration-300 hover:text-orange-300">Contact</a>
+            </nav>
+    
+            <!-- Social Media Icons -->
+            <nav class="mb-6 flex justify-center gap-4">
+                <a href="https://www.youtube.com/@raffaekaprayoga2367"
+                    class="text-white text-3xl transition-all duration-300 hover:text-orange-300">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/raffaekaprayoga/"
+                    class="text-white text-3xl transition-all duration-300 hover:text-orange-300">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/raffa%20eka%20prayoga"
+                    class="text-white text-3xl transition-all duration-300 hover:text-orange-300">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://github.com/RaffaEkaPrayoga"
+                    class="text-white text-3xl transition-all duration-300 hover:text-orange-300">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </nav>
+    
+            <!-- Copyright Text -->
+            <aside class="text-center text-sm">
+                <p>Copyright ©2024 - All rights reserved by RanzTech Ltd</p>
+            </aside>
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
