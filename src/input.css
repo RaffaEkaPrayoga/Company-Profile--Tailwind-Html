@@ -42,16 +42,10 @@
     @apply hover:text-orange-500 transition-all duration-300;
 }
 
- .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* Overlay dengan opacity */
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
 }
-.wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 0;
-}
+
 .hero {
     position: relative;
     z-index: 1;
